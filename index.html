@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+    <script src="https://kit.fontawesome.com/91d5dfa1bc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+<body onload = "myFunction()">
+    <div id="header">
+        <div class="container">
+             <nav>
+                <img src="images/achievement.svg" width="200px" height="200px" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">My Bio</a></li>
+                    <li><a href="#services">Qualifications</a></li>
+                    <!--<li><a href="#portfolio">Achievements</a></li> -->
+					<li><a href="#portfolio">Photo Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+             </nav>
+             <div class="header-text">
+                <p id="p1">Hello,</p>
+                <h1 id="namee">I'm <span>Austin</span> Dsouza</h1>
+             </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------About-->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/fish2.png" id="aboutimg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Hello, I am a skilled web developer with expertise in building responsive and
+                        scalable web applications using modern front-end and back-end
+                        technologies. In addition, I possess strong knowledge of C++ data
+                        structures and algorithms, which enables me to write efficient and
+                        optimized code.
+                        </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('achievments')">Achievments</p>
+                        <p class="tab-links" onclick="opentab('education')">Qualifications</p>
+                    </div>
+                    <div class="tab-contents  active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Figma<br>Canva</li>
+                            <li><span>Front-end Web Development</span><br>HTML5<br>CSS3<br>JavaScript<br>Bootstrap<br>React.js</li>
+                            <li><span>Back-end Web Development</span><br>Node.js<br>Express<br>MongoDB</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="achievments">
+                        <ul>
+                            <li><span>Internships</span><br>Cisco Netacad<br>Persistent Systems<br>IBM Skillshare</li>
+                            <li><span>Courses & Projects</span><br>HTML and Web Development<br>Software Security<br>Cybersecurity in Coursera<br>Pdf to Word converter website<br>Student Management System</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>College</span><br>St Joseph Engineering College, Vamanjoor</li>
+                            <li><span>Degree</span><br>Bachelor of Engineering</li>
+                            <li><span>Branch</span><br>Computer Science</li>
+							<li><span>PU</span><br>St Joseph Engineering College, Mangalore</li>
+                            <li><span>School</span><br>Nityadhar English Medium School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--server-time------------------------------------------>
+
+    <div id="servertime">
+        <div class="container">
+            <h1 class="sub-title">Server time</h1>
+                
+                <div class="server-time">
+                <div class="time" id="time1">
+                     <h1 id='clientdate'> </h1>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <!--visitor-count--------------------------------------->
+
+    <div  id="visitorcount">
+        <div class="container">
+            <h1 class="sub-title">Visitor Count</h1>
+            <div class="visitorcnt">
+                <div class="cnt" id="cnt1">
+                 <h1 id="count"></h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--portfolio ------------------------>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Gallery</h1>
+            <div class="work-list">
+                <div class="work" id="work1">
+                    <img src="images/gallery4.jpg">
+                    <!-- <div class="layer"> -->
+                        <!-- <h3>Social Media App</h3> -->
+                        <!-- <p>Developed a full-fledged Youtube clone.</p> -->
+                        <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                    <!-- </div> -->
+                </div>
+                <div class="work" id="work2">
+                    <img src="images/gallery3.jpg">
+                    <!-- <div class="layer"> -->
+                        <!-- <h3>Music App</h3> -->
+                        <!-- <p>Developed a Spotify clone.</p> -->
+                        <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                    <!-- </div> -->
+                </div>
+                <div class="work" id="work3">
+                    <img src="images/peakpx1.jpg">
+                    <!-- <div class="layer"> -->
+                        <!-- <h3>Online Shopping App</h3> -->
+                        <!-- <p>Developed an E-Commerce Website.</p> -->
+                        <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                    <!-- </div> -->
+                </div>
+            </div>
+            <a href="#" class="btn" id="seemorebtn">See more</a>
+        </div>
+    </div>
+    <!--contact------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p id="t1"><i class="fa-solid fa-paper-plane"></i>austindsza@</p>
+                    <p id="t2"><i class="fa-solid fa-square-phone"></i>+917766554433</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="resume/AustinDsouzaResume_copy.pdf" target="_blank" download class="btn btn2" id="cvbtn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+           <p>Copyright @ Austin. Made with <i class="fa-solid fa-heart"></i> by Austin Dsouza</p>
+    </div>
+
+
+
+
+
+
+    <script>
+
+     var tablinks = document.getElementsByClassName("tab-links");
+     var tabcontents = document.getElementsByClassName("tab-contents");
+
+     function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+     }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby8YOpkAgNj2OaSPDObSU5zq9a9x7srZPQPg7qori7iMfU2QYMI_UwYn3TWqRNiyrow/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script>
+        const logo = document.querySelector(".logo");
+        const name = document.getElementById("namee");
+        const p1 = document.getElementById("p1");
+        const header = document.getElementById("header");
+        function myFunction(){
+                name.style.opacity = "100%";
+                name.style.transition = "1.5s"; 
+                name.style.transform = "translateY(0px)"; 
+                p1.style.transform = "translateY(0px)";
+                p1.style.opacity = "100%";
+                logo.style.transform = "translateX(0px)";
+                logo.style.opacity = "100%";
+        }
+      </script>
+
+      <script>
+        const aboutimg = document.querySelector("#aboutimg");
+        const aboutcol2 = document.querySelector(".about-col-2");
+        const servert = document.querySelector(".server-time");
+        const works = document.querySelector(".work-list");
+        const contact = document.querySelector(".contact-left");
+        const time11 = document.querySelector("#time1");
+        const work1 = document.querySelector("#work1");
+        const work2 = document.querySelector("#work2");
+        const work3 = document.querySelector("#work3");
+        const seemore = document.querySelector("#seemorebtn");
+        const visitorcount = document.querySelector(".visitorcnt");
+        const countv = document.querySelector("#cnt1");
+        const socialIcons = document.querySelector(".social-icons");
+        const cvbtn = document.querySelector("#cvbtn");
+        const copyright = document.querySelector(".copyright");
+        const contactRight = document.querySelector(".contact-right");
+        
+
+        window.onscroll = function() {myFunction2()};
+        
+        function myFunction2() {
+          if (document.documentElement.scrollTop > aboutimg.scrollTop + 400) {
+            aboutimg.style.transform = "translateY(0)";
+            aboutimg.style.opacity = "100%";
+            aboutcol2.style.transform = "translateY(0)";
+            aboutcol2.style.opacity = "100%";
+
+          }
+            
+           if (document.documentElement.scrollTop > servert.scrollTop + 800) { 
+                time11.style.transform = "translateY(0)"; 
+                time11.style.opacity = "100%"; 
+            
+          }
+
+          if (document.documentElement.scrollTop > visitorcount.scrollTop + 800) { 
+                countv.style.transform = "translateY(0)"; 
+                countv.style.opacity = "100%"; 
+            
+          }
+          if (document.documentElement.scrollTop > works.scrollTop + 1000) {
+            work1.style.transform = "translateY(0)";
+            work1.style.opacity = "100%";
+            work2.style.transform = "translateY(0)";
+            work2.style.opacity = "100%";
+            work3.style.transform = "translateY(0)";
+            work3.style.opacity = "100%";
+            seemore.style.transform = "translateY(0)";
+            seemore.style.opacity = "100%";
+          }
+          
+          if (document.documentElement.scrollTop > contact.scrollTop + 1200) {
+            t1.style.transform = "translateY(0)";
+            t1.style.opacity = "100%";
+            t2.style.transform = "translateY(0)";
+            t2.style.opacity = "100%";
+            socialIcons.style.transform = "translateY(0)"
+            socialIcons.style.opacity = "100%";
+            cvbtn.style.transform = "translateY(0)";
+            cvbtn.style.opacity = "100%";
+            copyright.style.transform = "translateY(0)";
+            copyright.style.opacity = "100%";
+            contactRight.style.transform = "translateY(0)";
+            contactRight.style.opacity = "100%";
+
+        }
+    }
+      </script>
+    <script>
+                 function showdate() {
+                    var d = new Date();
+                    var h = d.getHours();
+                    var m = d.getMinutes();
+                    var s = d.getSeconds();
+                    var ampm = h >= 12 ? "PM" : "AM";
+                    
+
+                    h = h % 12 || 12;
+
+                    m = addLeadingZero(m);
+                    s = addLeadingZero(s);
+
+                    document.getElementById("clientdate").innerHTML = h + ":" + m + ":" + s + " " + ampm;
+                    setTimeout(showdate, 1000);
+                }
+
+                function addLeadingZero(number) {
+                    return (number < 10 ? "0" : "") + number;
+                }
+
+                showdate();
+    </script>
+     <script>
+     var n = localStorage.getItem('on_load_counter');
+      if (n === null) {
+        n = 0;
+      }
+      n++;
+      localStorage.setItem("on_load_counter", n);
+      document.getElementById('count').innerHTML = "+" +n;
+     </script>
+</body>
+</html>
