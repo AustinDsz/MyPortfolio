@@ -238,7 +238,7 @@ nav ul li a:hover::after{
 #clientdate {
     color: white;
      display: block;
-     font-size: 150px;
+     font-size: 130px;
 }
 
 /*-----------visitor count-----------*/
