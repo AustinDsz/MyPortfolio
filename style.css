@@ -78,7 +78,7 @@ nav ul li a:hover::after{
     transform: translateY(100px);
 }
 .header-text h1 span{
-    color: #ffffff;
+    color: #ff004f;
 }
 
 #header::before{
